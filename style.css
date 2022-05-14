@@ -1,0 +1,23 @@
+body {
+    width: 90%;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    background-color: #efefef;
+    z-index: 1;
+}
+
+main {
+    margin-top: 200px;
+}
+
+#nav li {
+    display: inline;
+    padding: 10px;
+}
