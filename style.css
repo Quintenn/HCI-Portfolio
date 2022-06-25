@@ -24,7 +24,6 @@ main {
 */
 
 .container {
-    border: 1px solid black;
     height: 100%;
     display: grid;
     grid-template: 100px auto 50px  / repeat(12, 1fr);
@@ -47,7 +46,8 @@ main {
 
 .content {
     grid-area: c;
-    background-color: #efefef;
+    padding-left: 5em;
+    padding-right: 10em;
 }
 
 .footer {    
