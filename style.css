@@ -26,42 +26,53 @@ main {
 .container {
     height: 100%;
     display: grid;
-    grid-template: 100px auto 50px  / repeat(12, 1fr);
-    grid-gap: 3px;
+    grid-template: 95px auto auto 50px  / repeat(12, 1fr);
+    grid-gap: 5px;
     grid-template-areas: 
         "h h h h h h h h h h h h"
         "m c c c c c c c c c c c"
+        ". c c c c c c c c c c c"
         "f f f f f f f f f f f f"
 }
 
 .header {
     grid-area: h;
     background-color: #efefef;
+    border-top-style: double;
+    border-bottom-style: double;
 }
 
 .menu {
     grid-area: m;
     background-color: #efefef;
+    border-top-style: double;
+    border-bottom-style: double;
 }
 
 .content {
     grid-area: c;
     padding-left: 5em;
     padding-right: 10em;
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer {    
     grid-area: f;
     background-color: #efefef;
+    border-top-style: double;
+    border-bottom-style: double;
 }
 
 h1 {
-    font-family: serif;
+    font-family: 'Diplomata SC', cursive;
+    color: #222;
     font-size: 1.2em;
 }
 
 h2 {
-    font-family: serif;
+    font-family: 'Diplomata SC', cursive;
+    color: forestgreen;
     font-size: 1.2em;
 }
 
