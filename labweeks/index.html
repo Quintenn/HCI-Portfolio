@@ -64,7 +64,7 @@
                 <h5 id="week-2-day-1-working-from-home">Week 2 - Day 1 - Working from home</h5>
                 <p>So, over the weekend I found out that I have COVID, which explains my symptoms from day 2. Luckily no one else on the team got sick, which I&#39;m very thankful for. This means that I&#39;m going to be working from home this week, which is going to be a whole different kind of challenge.</p>
                 <p>Since I can&#39;t actually work on the physical prototype from home, I talked with the team over Whatsapp and we decided that I should work on our concept statement, which I&#39;ve written out here (it&#39;s in Dutch.)</p>
-                <p><em>&quot;De kipkat is een hybride frankenstein-achtig schepsel die zich eenzaam, alleen en buitengesloten voelt. Hij kent niemand anders die ook zoals hem is en hij is altijd op zoek naar liefde, vrienden en aandacht van anderen. Heel veel van zijn vrienden rijden op wielen (andere artificial creature groepjes) en ze lachen hem altijd uit voor de rare manier waarop hij loopt.&quot;</em></p>
+                <p><em>&quot;De Kipkat is een hybride frankenstein-achtig schepsel die zich eenzaam, alleen en buitengesloten voelt. Hij kent niemand anders die ook zoals hem is en hij is altijd op zoek naar liefde, vrienden en aandacht van anderen. Heel veel van zijn vrienden rijden op wielen (andere artificial creature groepjes) en ze lachen hem altijd uit voor de rare manier waarop hij loopt.&quot;</em></p>
                 <p>After this, I started working on the beak. This means working with the piezo speaker and capacitive touch sensor. I looked at a lot of code, trying to figure out how to play melodies without having to use delay(). I thought this would be a good idea when we start working with multiple actuators on the same Arduino. This is because using delay() stops every single action on the Arduino when it&#39;s active, which means that triggering multiple actuators at the same time wouldn&#39;t be possible if the melodies are played with delay(). </p>
                 <p>To fix this, I used some code I found online (the Arduino example code BlinkWithoutDelay.ino also does this) that uses millis() and tried to fiigure out how this worked exactly. I then tried to retrofit this millis() framework onto my previous code for the beak.</p>
                 <h5 id="week-2-day-2-touch-sensors">Week 2 - Day 2 - Touch sensors</h5>
@@ -81,13 +81,13 @@
                 <video width="480" height="280" controls>
                     <source src="videos/showcase.mp4" type="video/mp4">
                 </video>
-                <p>The kipkat is a lonely, attention seeking creature. It has a few sensors and actuators that give it a distinct personality.</p>
+                <p>The Kipkat is a lonely, attention seeking creature. It has a few sensors and actuators that give it a distinct personality.</p>
                 <ol>
                 <li>Servo motors allow the Kipkat to walk.</li>
                 <li>Ultrasonic distance sensors can be triggered to activate LED-matrixes and servos on the Kipkat&#39;s head.</li>
                 <li>A piezo speaker in the beak makes noises every so often to attract attention from people. The top of the beak is also equipped with a capacitive touch sensor, which allows the Kipkat to be pet. This triggers a sound on the piezo speaker. </li>
                 </ol>
-                <p>Users can interact with the kipkat by petting it on the sides of his head, which will trigger the eyes and ears to point towards your hand. Users can also pet Kipkat on its nose, which will trigger the beak to make cry out in happiness that someone has touched it. </p>
+                <p>Users can interact with the Kipkat by petting it on the sides of his head, which will trigger the eyes and ears to point towards your hand. Users can also pet Kipkat on its nose, which will trigger the beak to make cry out in happiness that someone has touched it. </p>
                 <h4 id="reflection">Reflection</h4>
                 <p>At the end of HCI I&#39;m pretty pleased with how it all went, but there&#39;s definite room for improvement in our creature. </p>
                 <p>I think I did quite a lot of work during the lab weeks, both at Maakhaven and at home.</p>
