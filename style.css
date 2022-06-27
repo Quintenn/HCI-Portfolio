@@ -65,3 +65,18 @@ h2 {
     list-style-type: none;
     padding: 2px;
 }
+
+#homecontent {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.homeimage {
+    padding: 20px;
+}
+
+.me {
+    border-radius: 100px;
+    border: 2px solid #ddd;
+}
