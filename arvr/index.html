@@ -4,55 +4,61 @@
         <title>Topic: AR and VR</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
-            <h2>HCI Portfolio</h2>
+         <div class="container">
+            <div class="header">
+                <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
+                <h2>HCI Portfolio</h2>
+            </div>
+            <div class="menu">
                 <ul id="nav">
                     <li><a href="../playfulinteractions/index.html">Playful Interactions</a></li>
-                    <li><a href="../arvr/index.html">AR and VR</a></li>
+                    <li><a href="../arvr/index.html">XR</a></li>
                     <li><a href="../wearables/index.html">Wearables</a></li>
                     <li><a href="../artificialcreatures/index.html">Artificial Creatures</a></li>
                     <li><a href="../computervision/index.html">Computer Vision</a></li>
                     <li><a href="../virtualenvironments/index.html">Virtual Environments</a></li>
                     <li><a href="../arduino/index.html">Arduino</a></li>
-                    <li><a href="../excursion/index.html">Excursion and Guest lecture</a></li>
+                    <li><a href="../excursion/index.html">Excursion</a></li>
                     <li><a href="../labweeks/index.html">Lab Weeks</a></li>
                 </ul>
-        </header>
-        <main>
-            <h3>Topic: AR and VR</h3>
-            <p>
-            <ul>
-                <li>Assignments
-                    <ul>
-                        <li>Post all your assignments here</li>
-                    </ul>
-                </li>
-                <li>Research
-                    <ul>
-                    <li>
-                        A gathering place of your own research within this topic. Do not just give a reference
-                        / link to cool projects, but describe in your own words what you have found and
-                        what this means (eg for a user, for the field, to you). What makes the example so
-                        special? Why is this so interesting?
-                    </li>
-                    </ul>
-                </li>
-                <li>Reflect
-                    <ul>
-                    <li>
-                        How do you view this topic within your own life, society and the future? What greater
-                        goals does this topic contribute to? And how does it do that? What did you consider
-                        the most valuable aspect of this topic?
-                    </li>
-                    </ul>
-                </li>              
-            </ul>
-            </p> 
-        </main>
-        <footer>
-        </footer>
+            </div>
+            <div class="content">
+                <h3 id="xr">XR</h3>
+                <h4 id="research">Research</h4>
+                <h5 id="ilm-stagecraft">ILM Stagecraft</h5>
+                <p>Made by Industrial Light and Magic</p>
+                <p>When filming season 1 of The Mandalorian, the crew used large LED walls to project 3D environments made using Unreal Engine. The environments were then tracked to the movement of the camera, which meant that the environment would move at the same time as the camera’s to create the effect of being on a real set. This mixed reality approach had a few benefits to the filming compared to a green screen set.</p>
+                <ol>
+                <li>The actors were able to immerse themselves much more easily.</li>
+                <li>Reflective material (like the Mandalorian’s helmet) would be able to reflect the actual environment being used, which saves a ton of time in post-production.</li>
+                <li>The crew could adjust the environments on the fly during the filming, ranging from adjustments in the lighting, weather conditions, and virtual props.</li>
+                </ol>
+                <p>(picture)
+                <a href="https://www.ibc.org/trends/behind-the-scenes-the-mandalorians-groundbreaking-virtual-production/5542.article">https://www.ibc.org/trends/behind-the-scenes-the-mandalorians-groundbreaking-virtual-production/5542.article</a></p>
+                <h5 id="google-lens">Google Lens</h5>
+                <p>Made by Google
+                <a href="https://lens.google">https://lens.google</a></p>
+                <p>Here&#39;s an example of an AR app I personally use all the time. Google Lens is very similar to regular Google, but instead of entering a search using words you take a picture of anything using the app. Lens then uses its machine learning capabilities to compare your image to other images on the internet in order to determine what the picture is. It can be used to identify objects like plants, barcodes and buildings, translate in real-time,  solve math problems and more.</p>
+                <p>Recently, I used Google Lens to identify a weird plant I found in my back garden in order to check if it was toxic or poisonous in any way, since we have cats in the house that might want to eat it. I took a picture of the plant with Lens and found out that it was called <em>Potentilla Indica</em>, more commonly known as a <em>mock strawberry</em> because of the similarities between the two plants. The plant is apparently not dangerous at all, but I wouldn&#39;t have known that if it wasn&#39;t for Google Lens.  </p>
+                <p>(pictures)</p>
+                <h5 id="snapchat">Snapchat Lenses</h5>
+                <p>Snapchat&#39;s face filters stand out to me as one of the biggest, if not the biggest commercial success in the world of XR technology in terms of impact on a global scale. It introduced augmented reality to a whole demographic of people that might not have ever been interested in it otherwise, and it was one of the first companies to work with AR in this way.
+                The filters, or Lenses as Snapchat calls them, use pixel data from your camera to detect and locate facial features and aligns it with a virtual model of a face. This model can then be used to do just about anything, like deforming the mask to change your face shape or eye color, adding features like the now infamous dog nose and ears or set animations to trigger when you open your mouth or raise your eyebrows.
+                (pictures)</p>
+                <h4 id="concept-safezone">Concept SafeZone</h4>
+                <p>SafeZone is an AR app that helps keep their users safe from COVID in crowded areas. SafeZone scans an area using the camera to record the amount of people and the average distance between people. This, combined with local medical data, is then used to determine whether the area the user is looking at is safe to be in. The app displays this in the phone&#39;s camera view to visualize the risk the user has of contracting COVID by being in the scanned. </p>
+                <p>(picture)</p>
+                <h4 id="reflection">Reflection</h4>
+                <p>I think XR is a very intriguing topic with a lot of potential, but I also think the people that talk about its countless practical applications and powerful capabilities to immerse are kind of undermining the fact that the technology isn&#39;t that far along yet. The tech we have right now is expensive and kind of clunky, and at the moment I think that for most consumers and companies it&#39;s just too much of an inconvenience to justify implementing it into their daily lives. Ignoring all of this though, I think that XR has a very bright future, as long as there are enthusiasts out there that are thinking of new and creative ways to use the technology.</p>
+            </div>
+            <div class="footer">
+                <p>HCI Portfolio - Quinten van Leijenhorst - 17058155</p>
+            </div>
+        </div>
     </body>     
 </html>

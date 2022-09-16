@@ -4,83 +4,128 @@
         <title>Topic: Playful Interactions</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
-            <h2>HCI Portfolio</h2>
+        <div class="container">
+            <div class="header">
+                <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
+                <h2>HCI Portfolio</h2>
+            </div>
+            <div class="menu">
                 <ul id="nav">
                     <li><a href="../playfulinteractions/index.html">Playful Interactions</a></li>
-                    <li><a href="../arvr/index.html">AR and VR</a></li>
+                    <li><a href="../arvr/index.html">XR</a></li>
                     <li><a href="../wearables/index.html">Wearables</a></li>
                     <li><a href="../artificialcreatures/index.html">Artificial Creatures</a></li>
                     <li><a href="../computervision/index.html">Computer Vision</a></li>
                     <li><a href="../virtualenvironments/index.html">Virtual Environments</a></li>
                     <li><a href="../arduino/index.html">Arduino</a></li>
-                    <li><a href="../excursion/index.html">Excursion and Guest lecture</a></li>
+                    <li><a href="../excursion/index.html">Excursion</a></li>
                     <li><a href="../labweeks/index.html">Lab Weeks</a></li>
                 </ul>
-        </header>
-        <main>
-            <h3>Topic: Playful Interactions</h3>
-            <p>
-            <ul>
-                <li>Process
-                    <ul>
-                        <li>
-                            Give a day-by-day report of the groups work and your contribution to that. 
-                        </li>
-                        <li>
-                            Write about the advances/intermediate products you made
-                        </li>
-                        <li>
-                            Illustrate your progress with pictures, videos, drawings, etc.
-                        </li>
-                    </ul>
-                </li>
-                <li>Product
-                    <ul>
-                        <li>
-                            Describe what your product is/does and how this relates to the topic (and/or others
-                            fields/research) 
-                        </li>
-                        <li>
-                            Describe how your product works. And how users interacted with it
-                        </li>
-                        <li>
-                            Illustrate your product with pictures, videos|, blueprints, charts, schematics, etc.*
-                        </li>
-                        <li>
-                            Include the final video demonstrating your product (group product) *
-                        </li>
-                    </ul>
-                </li>
-                <li>Reflect
-                    <ul>
-                        <li>
-                            Are you content with your product? And why? Does it achieve what you set out to
-                            do?
-                        </li>
-                        <li>
-                            What is the quality of your product? Try to quantify/objectively express this
-                        </li>
-                        <li>
-                            Reflect on the process that you have gone through and compare your work/effort to
-                            that of the group. 
-                        </li>
-                        <li>
-                            How did you spend your time, tell something about this?
-                        </li>
-                        <li>
-                            Were you motivated? Were your expectations met? Did you have a good time? Did
-                            you learn a lot? Why? Why not?
-                        </li>
-                    </ul>
-                </li>              
-            </ul>
-            </p> 
-        </main>
-        <footer>
-        </footer>
+            </div>
+            <div class="content">
+                <h3 id="lab-weeks">Lab weeks</h3>
+                <h4 id="process">Process</h4>
+                <h5 id="week-1-day-1-introductions">Week 1 - Day 1 - Introductions</h5>
+                <p>First morning, starting off.
+                For our teambuilding exercise, we had to get to know each other, find out why we were put into a group and make a physical logo for our group. We couldn’t really find any commonalities besides the fact that we all spoke Dutch and some of us had a pet. We decided that our logo was going to be a mix of the pets we had, a cat and a chicken. This kind of led right into our idea for the artificial creature we were going to make.</p>
+                <img src="images/concept.HEIC">
+                <p>We started off our project by brainstorming some possible creatures and functions. </p>
+                <img src="images/brainstorm1.jpg" width="400" height="250">
+                <img src="images/brainstorm2.jpg" width="400" height="250">
+                <p>Once we knew what functions we definitely wanted to use, we broke up into two teams and started working on walking and eye movement. Me and Yustin worked on getting something to walk using four micro servo motors while May, Tessa and Allyshia started working on the LED matrix and programming eye movement. My work started by looking at some other projects online using servos and we adjusted some code we found online. Once we wired up the servo’s we stuck them to a phone case using some tape and we had our first walking prototype.</p>
+                <video width="480" height="320" controls muted>
+                    <source src="videos/phonecasewalk.MOV" type="video/mp4">
+                </video>
+                <p>A problem we had with this prototype was that only three of the four servo&#39;s were moving at the same time. Initially we thought one of the servo’s was broken, which wasn’t the case after testing a bit. We tried different configurations of code and we were able to control each servo fine, just not all four at the same time.</p>
+                <p>(video)</p>
+                <p>We then thought it had something to do with the amount of power the Arduino was able to provide to each servo, so we split the load in two by connecting another Arduino to the circuit. This worked but it was only a temporary fix.</p>
+                <video width="480" height="320" controls muted>
+                    <source src="videos/phonecasemovement.mp4" type="video/mp4">
+                </video>
+                <p>Eventually we just increased the delay between each step so the Arduino had more time to process the inputs, which worked. This was an adequate solution.</p>
+                <p>(video)</p>
+                <p>It couldn’t walk very far because the phone case was too small to hold any of the other electronics (arduino, breadboard, powerbank) and the servo’s weren’t strong enough to support the weight of the electronics.</p>
+                <p>After getting the motion down with the phone case, we built a simple cardboard box that was able to hold the servo’s and other electronics.</p>
+                <video width="480" height="320" controls muted>
+                    <source src="videos/servoproto.mp4" type="video/mp4">
+                </video>
+                <p>We worked on these problems over the course of the day and made considerable progress with our first prototype, ending the day with a simple cardboard box body with stubby servo legs, and working code for leg movement and LED matrix animations for blinking, looking left &amp; looking right. I also presented our cardboard servo box to the rest of the class at the end of the day.</p>
+                <p>(end of day 1 video)</p>
+                <h5 id="week-1-day-2-crawl-before-you-can-walk">Week 1 - Day 2 - Crawl before you can walk</h5>
+                <p>Today we made worked further on the locomotion and interactability of the prototype (LED matrix and LED’s with light sensor).</p>
+                <p>I mostly worked with Yustin on the locomotion. This included making legs out of cardboard, attaching those to the servo’s on the body. We worked with knees too, but that proved to be 1) too power-consuming for the Arduino and 2) a lot of work. </p>
+                <p>(video)</p>
+                <p>We had trouble with power a lot today. We concluded that we need condensators and a motor shield in order to power multiple servos at once and bigger servos that support more weight. Being able to support more weight means that we’ll be able to fit the electronics into the body and transition to a sturdier prototype made of wood.</p>
+                <h5 id="week-1-day-3-feeling-bad-start-on-sound">Week 1 - Day 3 - Feeling bad, start on sound</h5>
+                <p>I wasn’t feeling very good today and I didn’t get a whole lot of work done. We did get materials to start working on the wooden body.</p>
+                <p>I also experimented with the piezo speaker to give our creature some life. I’m planning on using capacitive touch sensors to trigger the sounds alongside the odd noise every so often.</p>
+                <p>I also helped out with the head of our cardboard prototype a bit, fixing a problem we had where the eyes would stay closed as long as the tail was moving, which is no longer an issue</p>
+                <h5 id="week-1-day-4-everyone-is-sick-">Week 1 - Day 4 - Everyone is sick :(</h5>
+                <p>Today, most of our group was feeling kind of tired and under the weather, so we cut the day short. We did do some work on our wooden prototype though. I also started sketching out some designs for the beak of our creature.
+                At one point we decided to start working with the ultrasonic distance sensors instead of the light sensors, which would be easier to trigger. We&#39;ve been having a problem where the light values would obviously be changing throughout the day, so the value for when to trigger the eyes to move would have to change througout the day as well.</p>
+                <h5 id="week-2-day-1-working-from-home">Week 2 - Day 1 - Working from home</h5>
+                <p>So, over the weekend I found out that I have COVID, which explains my symptoms from day 2. Luckily no one else on the team got sick, which I&#39;m very thankful for. This means that I&#39;m going to be working from home this week, which is going to be a whole different kind of challenge.</p>
+                <p>Since I can&#39;t actually work on the physical prototype from home, I talked with the team over Whatsapp and we decided that I should work on our concept statement, which I&#39;ve written out here (it&#39;s in Dutch.)</p>
+                <p><em>&quot;De Kipkat is een hybride frankenstein-achtig schepsel die zich eenzaam, alleen en buitengesloten voelt. Hij kent niemand anders die ook zoals hem is en hij is altijd op zoek naar liefde, vrienden en aandacht van anderen. Heel veel van zijn vrienden rijden op wielen (andere artificial creature groepjes) en ze lachen hem altijd uit voor de rare manier waarop hij loopt.&quot;</em></p>
+                <p>After this, I started working on the beak. This means working with the piezo speaker and capacitive touch sensor. I looked at a lot of code, trying to figure out how to play melodies without having to use delay(). I thought this would be a good idea when we start working with multiple actuators on the same Arduino. This is because using delay() stops every single action on the Arduino when it&#39;s active, which means that triggering multiple actuators at the same time wouldn&#39;t be possible if the melodies are played with delay(). </p>
+                <p>To fix this, I used some code I found online (the Arduino example code BlinkWithoutDelay.ino also does this) that uses millis() and tried to fiigure out how this worked exactly. I then tried to retrofit this millis() framework onto my previous code for the beak.</p>
+                <h5 id="week-2-day-2-touch-sensors">Week 2 - Day 2 - Touch sensors</h5>
+                <p>Today I started work on the capacitive touch sensors, which turned out to be pretty hard (especially while only using materials I have lying around in my room).</p>
+                <p>Worked on touch sensors. very hard.</p>
+                <h5 id="week-2-day-3-more-experimenting-with-sound">Week 2 - Day 3 - More experimenting with sound</h5>
+                <p>I experimented more with different types of sounds, chirps and songs for the Kipkat. However, it&#39;s getting kind of hard to stay productive in quarantine without the team. </p>
+                <h5 id="week-2-day-4-making-the-beak">Week 2 - Day 4 - Making the beak</h5>
+                <p>Today I made a beak.</p>
+                <p>I also did work on integrating my beak code into the code that the eyes and ears were running, but I later found out that this wasn&#39;t necessary since we were going to be running the beak&#39;s code on a separate Arduino.</p>
+                <h5 id="week-2-day-5-expo">Week 2 - Day 5: Expo</h5>
+                <p>Today was the last day and my first day back in Maakhaven since last week. I got up early today in order to finish the code for the beak. When I got there we started working on integrating what I did at home with what the team did at Maakhaven. Besides that, we also did final testing and everything was going well. After lunch, we got back to Maakhaven and the expo was about to begin. Exactly as prophesised by Chris, Murphy&#39;s Law kicked in and things slowly started breaking. First, the servo legs started freaking out and breaking down, which was a real bummer. After a few hours of the expo, the touch sensor on the beak also stopped working. People seemed to be interested in the Kipkat though, I suppose since it looks kind of unique and weird. I had a lot of fun at the expo talking to people about our concept and they seemed genuinely interested in our broken, lonely little creature.</p>
+                <h4 id="product-kipkat">Product - Kipkat</h4>
+                <video width="480" height="280" controls>
+                    <source src="videos/showcase.mp4" type="video/mp4">
+                </video>
+                <p>The Kipkat is a lonely, attention seeking creature. It has a few sensors and actuators that give it a distinct personality.</p>
+                <ol>
+                <li>Servo motors allow the Kipkat to walk.</li>
+                <li>Ultrasonic distance sensors can be triggered to activate LED-matrixes and servos on the Kipkat&#39;s head.</li>
+                <li>A piezo speaker in the beak makes noises every so often to attract attention from people. The top of the beak is also equipped with a capacitive touch sensor, which allows the Kipkat to be pet. This triggers a sound on the piezo speaker. </li>
+                </ol>
+                <p>Users can interact with the Kipkat by petting it on the sides of his head, which will trigger the eyes and ears to point towards your hand. Users can also pet Kipkat on its nose, which will trigger the beak to make cry out in happiness that someone has touched it. </p>
+                <h4 id="reflection">Reflection</h4>
+                <p>At the end of HCI I&#39;m pretty pleased with how it all went, but there&#39;s definite room for improvement in our creature. </p>
+                <p>I think I did quite a lot of work during the lab weeks, both at Maakhaven and at home.</p>
+                <p>Looking back on it, I had a good time and I learned a lot too. My team was very friendly and cooperative.</p>
+                <p>Are you content with your product? Any why? Does it achieve what you set out to do?
+                What is the quality of your product? Try to quantify/objectively express this
+                Reflect on the process that you have gone through and compare your work/effort to that of the group
+                How did you spend your time, tell something about this
+                Were you motivated? Were your expectations met? Did you have a good time? Did you learn a lot? Why? Why not?</p>
+
+            </div>
+            <div class="footer">
+                <p>HCI Portfolio - Quinten van Leijenhorst - 17058155</p>
+            </div>
+        </div>
     </body>     
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

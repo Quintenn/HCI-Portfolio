@@ -4,44 +4,82 @@
         <title>Topic: Playful Interactions</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
-            <h2>HCI Portfolio</h2>
+        <div class="container">
+            <div class="header">
+                <a href="../index.html"><h1>Quinten van Leijenhorst</h1></a>
+                <h2>HCI Portfolio</h2>
+            </div>
+            <div class="menu">
                 <ul id="nav">
                     <li><a href="../playfulinteractions/index.html">Playful Interactions</a></li>
-                    <li><a href="../arvr/index.html">AR and VR</a></li>
+                    <li><a href="../arvr/index.html">XR</a></li>
                     <li><a href="../wearables/index.html">Wearables</a></li>
                     <li><a href="../artificialcreatures/index.html">Artificial Creatures</a></li>
                     <li><a href="../computervision/index.html">Computer Vision</a></li>
                     <li><a href="../virtualenvironments/index.html">Virtual Environments</a></li>
                     <li><a href="../arduino/index.html">Arduino</a></li>
-                    <li><a href="../excursion/index.html">Excursion and Guest lecture</a></li>
+                    <li><a href="../excursion/index.html">Excursion</a></li>
                     <li><a href="../labweeks/index.html">Lab Weeks</a></li>
                 </ul>
-        </header>
-        <main>
-            <h3>Excursion and Guest Lecture</h3>
-            <p>
-            <ul>
-                <li>Assignments
-                    <ul>
-                        <li>Post all your assignments here</li>
-                    </ul>
-                </li>
-                <li>Reflect
-                    <ul>
-                    <li>
-                        What did you learn from the excursion / guest lecture? What spoke to you? what
-                        didn’t? In what way was the excursion / guest lecture valuable?
-                    </li>
-                    </ul>
-                </li>              
-            </ul>
-            </p> 
-        </main>
-        <footer>
-        </footer>
+            </div>
+            <div class="content">
+                <h3>Excursion</h3>
+                <p>For my excursion I went to the Maker Faire at TU Delft. I had a great time and there were a lot of super interesting creations there, one of which caught my eye because of how simple but effective the interaction was with regards to playful interaction.</p>
+                <figure>
+                    <img src="images/cooperation3.jpg" alt="picture of r/place IRL" style="width:100%">
+                    <figcaption>r/place IRL</figcaption>
+                </figure>
+                <p>This is r/place IRL by Rolf Hut. The goal of this was to simulate Reddit&#39;s 2017 social experiment in real life. If you would like to know more about the original experiment, click <a href="https://www.inverse.com/article/29917-timelapse-reddit-place-social-experiment">here</a>. Put simply, Reddit users were given a giant blank canvas where every user could place one pixel every five minutes. This simple concept gave way to a piece of collaborative art that couldn&#39;t have been created any other way.</p>
+                <figure>
+                    <img src="images/ogcanvas.png" alt="The original r/place canvas." style="width:100%">
+                    <figcaption>This is the result of the original r/place experiment. Note how a single person could never create a piece of art like this, since every pixel can be overwritten by anyone else placing pixels. This meant that communities on Reddit had to plan out what they wanted to create as a group and protect the part of the canvas they needed in order to claim their spot on the final piece.</figcaption>
+                </figure>
+                <p>This IRL version works similarly in the sense that instead of pixels on a canvas, there&#39;s a very large circuit where people can place LED&#39;s wherever they choose, which then light up. This is what I mean by simple but effective here. The act of placing an LED is actually really simple, but this simplicity allowed users to be creative with the way they interacted with the installation. This also meant that the installation was super accessible to use, and it definitely showed by the amount of people that came to interact with an installation which was essentially just turning on some lights. Some people spelled out words, others made pictures or flags. Others worked together to make something cool, or added to something that was already there when they arrived at the installation. When I was at the Maker Faire, I liked going back to this installation every so often to see how it has changed over time, which was quite interesting to see.</p>
+                <p>(picture or video)</p>
+                <p>Technically, the installation works as follows. 
+                
+                LEDs light up when current runs through them.
+Make sure you connect the LED the correct way
+around. The lead on the flat side is the minus
+and usually goes to ground. With LEDs, the
+colour matters for how to connect it. For this
+manual we will use red, yellow or green LEDs.
+Blue and white are less suitable.
+
+                    
+                    
+                    
+    A breadboard is a useful tool to make an
+electronic circuit prototype without soldering.
+You simply insert the components into the
+holes to connect them together. Unfortunately,
+the connections are not sturdy enough to really
+use in practice. So if you are content with your
+circuit on your breadboard, it's important to
+transfer the circuit to a circuit board and solder
+it permanently.                
+                
+                
+                
+                
+                
+                </p>
+                <figure>
+                <img src="images/circuit2.jpg" alt="Image of the r/place IRL circuitboard">  
+                <figcaption>This is what the circuit looked like.</figcaption>
+                </figure>       
+                <p>Out of all the installations at the Maker Faire, I feel like r/place IRL was the most human technology there. It requires human input in order to work, and the end result was something that could not have been created by any computer. </p>
+                <img src="images/selfie.jpg" width="183" height="280">
+            </div>
+            <div class="footer">
+                <p>HCI Portfolio - Quinten van Leijenhorst - 17058155</p>
+            </div>
+        </div>
     </body>     
 </html>
+
