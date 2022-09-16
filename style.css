@@ -61,6 +61,10 @@ h2 {
     font-size: 1.2em;
 }
 
+figcaption {
+    font-size: 0.8em;
+}
+
 #nav li {
     list-style-type: none;
     padding: 2px;
